@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Get In Touch</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<!-- Outlined style family (variable font) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="contact-style.css">
+<link rel="icon" type="" href="logo.png">
+
+
+<script>
+	$(document).ready(function(){
+
+$(".menu").click(function(){
+
+	$(".click").show().animate({
+		width: "350px"
+	}, 500);
+
+});
+
+ $("#close").click(function(){
+    $(".click").animate({
+      width: "0"
+    }, 500, function(){   // animate khatam hone ke baad chalega
+      $(this).hide();
+    });
+  });
+});
+</script>
+
+
+<script>
+function myFunction() {
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let phone = document.getElementById('phone').value;
+  let date = document.getElementById('date').value;
+  let time = document.getElementById('time').value;
+  let seat = document.getElementById('seat').value;
+
+  alert(
+    "Your Table is booked now!\n\nThanks for booking! Please check your details below:\n" +
+    "Your Name: " + name + 
+    "\nYour Email: " + email + 
+    "\nYour Phone: " + phone + 
+    "\nYour Date: " + date + 
+    "\nYour Time: " + time + 
+    "\nYour Seats: " + seat
+  );
+
+  return false; // prevent actual form submission (page refresh)
+}
+</script>
+
+<style>
+	
+:root {
+  --button:#E1AA36;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- header -->
+<div id="v">
+
+<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dining-restaurant-1.jpg" id="img1">
+
+<div id="top"><p class="p1">40 Park Ave, Brooklyn, New York 70250</p>
+<p class="p2"><a href="https://www.facebook.com" style="color:white;"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com" style="color:white;"><i class="fa-brands fa-instagram"></i></a><a href="https://www.twitter.com" style="color:white;"><i class="fa-brands fa-twitter"></i></a><a href="https://www.Whatsapp.com" style="color:white;"><i class="fa-brands fa-whatsapp"></i></a></p>
+</div>
+
+<nav>
+<a href="home.html">	<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="50" width="100"></a>
+<p class="menu"><i class="fa-solid fa-bars"></i></p>
+
+<div class="link">
+
+<a href="home.html" >Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html" >About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html"  style="color: #E1AA36;">Contact</a>
+<a href="home.html">Buy Now</a>
+
+<a href="contact.html" class="book">BOOK A TABLE</a>
+
+</div>
+</nav>
+
+
+<div id="text">
+		<p style=" font-size: 17px;">WE LOVE TO HEART FROM YOU</p>
+	<h1 style="color:white; text-transform: uppercase; margin-top: 5px; " class="h1">CONTACT</h1>
+	
+	
+</div>
+
+</div>
+
+
+<div class="click">
+	<i class="fa-solid fa-xmark" style="color:white; cursor: pointer;" id="close"></i>
+
+<div class="slidemenu">
+
+<a href="home.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html"  style="color: #E1AA36; ">Contact</a>
+<a href="home.html">Buy Now</a>
+
+</div>
+
+<p class="p3"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-whatsapp"></i></p>
+
+</div>
+
+<!-- header over -->
+
+
+<div class="container1">
+  <!-- Left Image -->
+  <div class="c1">
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2020/06/about-64.jpg" class="image">
+  </div>
+
+  <!-- Right Content -->
+  <div class="c2">
+    <p>GET IN TOUCH</p>
+    <h1>FIND US</h1>
+
+    <div class="t">
+      <div><h2>OPENING HOURS :</h2></div>
+      <div><p>Mon - Fri : 10AM - 11PM <br> Sat - Sun : 9AM - 1PM</p></div>
+
+      <div><h2>ADDRESS :</h2></div>
+      <div><p>Dina Restaurant <br>40 Park Ave, Brooklyn, New York 70250</p></div>
+
+      <div><h2>PHONE & EMAILS :</h2></div>
+      <div>
+        <p>1-000-111-222 <br>
+          <a href="mailto:contact@example.com">contact@example.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="p">COME TO OUR RESTAURANT</p>
+<h1 class="h">MAKE A RESERVATION</h1>
+
+<!-- <form id="form1">
+	<div>
+<label>Name*</label><br>
+<input type="text" required placeholder="Enter Your Name" id="name">
+</div>
+
+<div>
+	<label>Email*</label><br>
+	<input type="email" required placeholder="Enter Your Email" id="email">
+</div>
+
+<div>
+	<label>Phone*</label><br>
+	<input type="text" name="" required placeholder="Your Phone Number" maxlength="10" id="phone">
+</div>
+
+<div>
+	<label>Date*</label><br>
+	<input type="date" required id="date">
+</div>
+
+<div>
+	<label>Time*</label><br>
+	<select id="time">
+		<option>09:00</option>
+		<option>10:00</option>
+		<option>11:00</option>
+		<option>12:00</option>
+		<option>13:00</option>
+		<option>14:00</option>
+		<option>15:00</option>
+		<option>16:00</option>
+		<option>17:00</option>
+		<option>18:00</option>
+		<option>19:00</option>
+		<option>20:00</option>
+		<option>21:00</option>
+		<option>22:00</option>
+	</select>
+</div>
+
+<div>
+	<label>Seats*</label><br>
+	<input type="number" required id="seat">
+</div>
+
+</form>
+
+<div style="padding: 0 70px;margin-top: 60px;">
+<label style="color:white;display: inline-block;padding-bottom: 10px;font-size: 18px;">Special Requests</label><br>
+<input type="text" form="form1" style="width: 100%; padding-bottom: 80px; padding-top: 10px; font-size: 18px;">
+</div>
+
+<div style="text-align: center; margin-top: 70px;">
+<input type="submit" class="book b" onclick="myFunction()" value="BOOK NOW">
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<form id="form1" onsubmit="return myFunction()">
+	<div>
+		<label>Name*</label><br>
+		<input type="text" required placeholder="Enter Your Name" id="name" autocomplete="off">
+	</div>
+
+	<div>
+		<label>Email*</label><br>
+		<input type="email" required placeholder="Enter Your Email" id="email" autocomplete="off">
+	</div>
+
+	<div>
+		<label>Phone*</label><br>
+		<input type="text" required placeholder="Your Phone Number" maxlength="10" id="phone" autocomplete="off">
+	</div>
+
+	<div>
+		<label>Date*</label><br>
+		<input type="date" required id="date">
+	</div>
+
+	<div>
+		<label>Time*</label><br>
+		<select id="time" required>
+			<option value="">-- Select Time --</option>
+			<option>09:00</option>
+			<option>10:00</option>
+			<option>11:00</option>
+			<option>12:00</option>
+			<option>13:00</option>
+			<option>14:00</option>
+			<option>15:00</option>
+			<option>16:00</option>
+			<option>17:00</option>
+			<option>18:00</option>
+			<option>19:00</option>
+			<option>20:00</option>
+			<option>21:00</option>
+			<option>22:00</option>
+		</select>
+	</div>
+
+	<div>
+		<label>Seats*</label><br>
+		<input type="number" required id="seat" min="1">
+	</div>
+
+	<div style="width:100%; margin-top:30px;">
+		<label style="color:white;display: inline-block;padding-bottom: 10px;font-size: 18px;">Special Requests</label><br>
+		<input type="text" style="width: 100%; padding-bottom: 80px; padding-top: 10px; font-size: 18px;">
+	</div>
+
+<div style="width:100%; text-align:center; margin-top:40px;">
+		<input type="submit" class="book b" value="BOOK NOW" >
+	</div>
+
+	
+</form>
+
+
+
+<footer>
+  <div class="f1">
+    <a href="home.html">Home </a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="f2" style="text-align: center;">
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="80" width="150"><p style="color:white;margin-top: 20px;">40 Park Ave, Brooklyne, New York 70250</p>
+    <p style="color:white;margin-top: 10px;">1-800-000-111</p>
+    <a href="mailto:contact@gamil.com" style="color:white;margin-top: 10px;display: inline-block;text-decoration: none;">contact@gmail.com</a>
+  </div>
+
+  <div class="f3">
+     <a href="https://www.facebook.com">Facebook </a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.Whatsapp.com">Whatsapp</a>
+  </div>
+</footer>
+
+<div style="background-color: #D89216;text-align: center;padding: 20px;font-style: italic;">
+<p>Website Design By : Pratvi Jikadra<br><a href="mailto:pratvijikadra@gmail.com" style="color:black;margin-top: 5px;display: inline-block;" class="pratvi" title="mail me to design your website">pratvijikadra@gmail.com</a></p>
+</div>
+
+
+
+</body>
+</html>

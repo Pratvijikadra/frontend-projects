@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dina Fine Dining Resturant - Blog</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<!-- Outlined style family (variable font) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="blog-style.css">
+<link rel="icon" type="" href="logo.png">
+
+
+<script>
+	$(document).ready(function(){
+
+$(".menu").click(function(){
+
+	$(".click").show().animate({
+		width: "350px"
+	}, 500);
+
+});
+
+ $("#close").click(function(){
+    $(".click").animate({
+      width: "0"
+    }, 500, function(){   // animate khatam hone ke baad chalega
+      $(this).hide();
+    });
+  });
+});
+</script>
+
+<style>
+	
+:root {
+  --button:#E1AA36;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<!-- header -->
+<div id="v">
+
+<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/slider-2-3.jpg" id="img1">
+
+<div id="top"><p class="p1">40 Park Ave, Brooklyn, New York 70250</p>
+<p class="p2"><a href="https://www.facebook.com" style="color:white;"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com" style="color:white;"><i class="fa-brands fa-instagram"></i></a><a href="https://www.twitter.com" style="color:white;"><i class="fa-brands fa-twitter"></i></a><a href="https://www.Whatsapp.com" style="color:white;"><i class="fa-brands fa-whatsapp"></i></a></p>
+</div>
+
+<nav>
+<a href="home.html">	<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="50" width="100"></a>
+<p class="menu"><i class="fa-solid fa-bars"></i></p>
+
+<div class="link">
+
+<a href="home.html" >Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html" >About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html" style="color: #E1AA36;">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+<a href="contact.html" class="book">BOOK A TABLE</a>
+
+</div>
+</nav>
+
+
+<div id="text">
+		<p style=" font-size: 17px;">VIEW THE LATEST ARTICLES</p>
+	<h1 style="color:white; text-transform: uppercase; margin-top: 5px; " class="h1">BLOG</h1>
+	
+	
+</div>
+
+</div>
+
+
+<div class="click">
+	<i class="fa-solid fa-xmark" style="color:white; cursor: pointer;" id="close"></i>
+
+<div class="slidemenu">
+
+<a href="home.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html" style="color: #E1AA36;">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+</div>
+
+<p class="p3"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-whatsapp"></i></p>
+
+</div>
+
+<!-- header over -->
+
+
+
+
+<div class="container1">
+
+  <!-- First Big Blog -->
+  <div class="c1">
+    <p><span id="s1">Dessert</span> <span id="s1"> Food</span></p><br>
+    <h1 class="free">Gluten Free Muffins</h1><br>
+   <!--  <p style="font-size: 14px;">January 15, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius: 50%;vertical-align: middle;"> 
+      <span style="color:var(--button);">Silvia just</span> 
+    </p><br> --><p style="font-size: 14px;display: inline-block;">January 15, 2025 <img src="user.png" height="50" width="50" style="border-radius: 50%; height: 50px;width: 50px;margin-top: -4px; vertical-align: middle;"> <span style="color:var(--button);">Silvia just</span> </p><br>
+
+    <a href = "blog-single-page.html"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2022/07/blog-2-3.jpg" alt="Muffins"></a><br><br>
+    <p style="text-align: left; font-size: 17px;line-height: 25px;">
+    Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra, sollicitudin dui eget, blandit lorem. Nunc vitae blandit lectus. Donec lacinia magna sit amet arcu aliquet luctus. Maecenas vehicula metus nisi, nec finibus justo vulputate eget. Pellentesque porta felis id erat sodales condimentum. Nam…
+    </p><br><br>
+    <a href="blog-single-page.html" class="book" style="color:white;">READ MORE</a><br><br><br><br>
+    <hr>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="c2">
+    <h4>CATEGORIES</h4>
+    <a href="#">Dessert</a>
+    <a href="#">Food</a>
+    <a href="#">Italian</a>
+    <a href="#">Recipes</a>
+
+    <form class="form">
+      <input type="text" class="input" required placeholder="Search...">
+      <button type="submit" class="btn">Search</button>
+    </form>
+
+    <br><br>
+    <h4>RECENT POSTS</h4>
+    <a href="#">Gluten Free Muffins</a>
+    <a href="#">Next Level Steak Sandwich</a>
+    <a href="#">Epic Egg Salad</a>
+    <a href="#">Double-choc brownies</a>
+    <a href="#">Quick Grilled Pizza</a>
+  </div>
+
+  <!-- Next posts grid -->
+  <div class="c3"><a href="sandwich-blog.html"><img src="https://t3.ftcdn.net/jpg/15/56/74/58/240_F_1556745895_ZW61zDfaU4NI3HFvOwTefSvrrmvWDZxq.jpg"  class="image"></a></div>
+  <div class="c4">
+    <p style="margin-bottom: 13px;"><span id="s1">Food</span></p>
+    <h2 class="free" style="margin-bottom:13px;">Next Level Steak Sandwich</h2>
+    <p style="font-size:14px;">January 15, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p style="line-height: 25px;font-size: 17px;">Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem...</p><br><br>
+    <a href="sandwich-blog.html" class="book" style="color:white;">READ MORE</a>
+  </div>
+
+  <div class="cc3"><a href="egg-blog.html"><img src="https://static01.nyt.com/images/2025/04/10/multimedia/hm-broken-egg-salad-bcvf/hm-broken-egg-salad-bcvf-googleFourByThree.jpg" class="image"></a></div>
+  <div class="cc4">
+    <p style="margin-bottom: 13px;"> <span id="s1">Food</span> <span id="s1">Recipes</span></p>
+    <h2 class="free" style="margin-bottom: 13px;">Epic Egg Salad</h2>
+    <p style="font-size:14px;">January 18, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p style="line-height: 25px;font-size: 17px;">Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem...</p><br><br>
+    <a href="egg-blog.html" class="book" style="color:white;">READ MORE</a>
+  </div>
+
+  <div class="cc5"><a href="browni-blog.html"><img src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipesmedia/recipes/retail/x17/2003/feb/17244-caramel-topped-ice-cream-dessert-600x600.jpg" class="image"></a></div>
+  <div class="cc6">
+    <p style="margin-bottom: 13px;"><span id="s1">Dessert</span> <span id="s1">Food</span> <span id="s1">Recipes</span></p>
+    <h2 class="free" style="margin-bottom: 13px;">Double-choc brownies</h2>
+    <p style="font-size:14px;">January 27, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p style="line-height: 25px;font-size: 17px;">Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem...</p><br><br>
+    <a href="browni-blog.html" class="book" style="color:white;">READ MORE</a>
+  </div>
+
+  <div class="cc7"><a href="pizza-blog.html"><img src="https://richanddelish.com/wp-content/uploads/2022/05/garlic-pizza.jpg" class="image"></a></div>
+  <div class="cc8">
+    <p style="margin-bottom: 13px;"><span id="s1">Food</span> <span id="s1">Italian</span> <span id="s1">Recipes</span></p>
+    <h2 class="free" style="margin-bottom: 13px;">Quick Grilled Pizza</h2>
+    <p style="font-size:14px;">January 03, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p style="line-height: 25px;font-size: 17px;">Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem...</p><br><br>
+    <a href="pizza-blog.html" class="book" style="color:white;">READ MORE</a>
+  </div>
+
+  <div class="cc9"><a href="corn-blog.html"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fea7cdcb0f4273cbb3269720f4f68c5b5f337f050" class="image"></a></div>
+  <div class="cc10">
+    <p style="margin-bottom: 13px;"><span id="s1">Food</span> <span id="s1">Recipes</span></p>
+    <h2 class="free" style="margin-bottom: 13px;">Corn-and-Ham Risotto</h2>
+    <p style="font-size:14px;">January 11, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p style="line-height: 25px;font-size: 17px;">Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem...</p><br><br>
+    <a href="corn-blog.html" class="book" style="color:white;">READ MORE</a>
+  </div>
+
+  <div class="cc11"><a href="noddle-blog.html"><img src="https://blog.themalamarket.com/wp-content/uploads/2024/06/Vegetarian-pulled-noodles-lead-more-sat.jpg" class="image"></a></div>
+  <div class="cc12">
+    <p style="margin-bottom: 13px;"><span id="s1">Food</span> <span id="s1">Italian</span> <span id="s1">Recipes</span></p>
+    <h2 class="free" style="margin-bottom: 13px;">Spicy mix veg noddles</h2>
+    <p style="font-size:14px;">January 10, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p style="line-height: 25px;font-size: 17px;">Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem...</p><br><br>
+    <a href="noddle-blog.html" class="book" style="color:white;">READ MORE</a>
+  </div>
+
+</div>
+
+
+<footer>
+  <div class="f1">
+    <a href="home.html">Home </a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="f2" style="text-align: center;">
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="80" width="150"><p style="color:white;margin-top: 20px;">40 Park Ave, Brooklyne, New York 70250</p>
+    <p style="color:white;margin-top: 10px;">1-800-000-111</p>
+    <a href="mailto:contact@gamil.com" style="color:white;margin-top: 10px;display: inline-block;text-decoration: none;">contact@gmail.com</a>
+  </div>
+
+  <div class="f3">
+     <a href="https://www.facebook.com">Facebook </a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.Whatsapp.com">Whatsapp</a>
+  </div>
+</footer>
+
+<div style="background-color: #D89216;text-align: center;padding: 20px;font-style: italic;">
+<p>Website Design By : Pratvi Jikadra<br><a href="mailto:pratvijikadra@gmail.com" style="color:black;margin-top: 5px;display: inline-block;" class="pratvi" title="mail me to design your website">pratvijikadra@gmail.com</a></p>
+</div>
+
+
+
+
+</body>
+</html>

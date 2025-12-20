@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<!-- Outlined style family (variable font) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="gallary-style.css">
+<link rel="icon" type="" href="logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Gallary</title>
+
+<script>
+	$(document).ready(function(){
+
+$(".menu").click(function(){
+
+	$(".click").show().animate({
+		width: "350px"
+	}, 500);
+
+});
+
+ $("#close").click(function(){
+    $(".click").animate({
+      width: "0"
+    }, 500, function(){   // animate khatam hone ke baad chalega
+      $(this).hide();
+    });
+  });
+});
+</script>
+
+<style>
+	
+:root {
+  --button:#E1AA36;
+}
+
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background: black;
+      margin: 0;
+     
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 100px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      height: 450px;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    /* Hover Zoom */
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Overlay Border + Icon */
+    .overlay {
+      position: absolute;
+      inset: 20px;
+      border: 1px solid white;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+      align-items: center;
+    }
+
+    .overlay i {
+      font-size: 40px;
+      color: white;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+
+    .gallery-item:hover .overlay i {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+      animation: zoomIn 0.5s ease;
+    }
+
+    .close, .prev, .next {
+      position: absolute;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.3s;
+    }
+
+    .close { top: 20px; right: 30px; }
+    .prev { top: 50%; left: 30px; transform: translateY(-50%); }
+    .next { top: 50%; right: 30px; transform: translateY(-50%); }
+
+    .close:hover, .prev:hover, .next:hover {
+      color: #f1c40f;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes zoomIn {
+      from {transform: scale(0.7);}
+      to {transform: scale(1);}
+    }
+
+      /* Responsive Breakpoints */
+    @media (max-width: 1200px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-item {
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .gallery-item {
+        height: 300px;
+      }
+      .overlay i {
+        font-size: 30px;
+      }
+      .close, .prev, .next {
+        font-size: 30px;
+      }
+    }
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<!-- header -->
+<div id="v">
+
+<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-5.jpg" id="img1">
+
+<div id="top"><p class="p1">40 Park Ave, Brooklyn, New York 70250</p>
+<p class="p2"><a href="https://www.facebook.com" style="color:white;"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com" style="color:white;"><i class="fa-brands fa-instagram"></i></a><a href="https://www.twitter.com" style="color:white;"><i class="fa-brands fa-twitter"></i></a><a href="https://www.Whatsapp.com" style="color:white;"><i class="fa-brands fa-whatsapp"></i></a></p>
+</div>
+
+<nav>
+<a href="home.html">	<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="50" width="100"></a>
+<p class="menu"><i class="fa-solid fa-bars"></i></p>
+
+<div class="link">
+
+<a href="home.html" >Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html" >About Us</a>
+<a href="gallary.html" style="color: #E1AA36;">Gallary</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+<a href="contact.html" class="book">BOOK A TABLE</a>
+
+</div>
+</nav>
+
+
+<div id="text">
+		<p style=" font-size: 17px;">ENJOY OUR DELICIOUS FOOD</p>
+	<h1 style="color:white; text-transform: uppercase; margin-top: 5px; " class="h1">GALLARY</h1>
+	
+	
+</div>
+
+</div>
+
+
+<div class="click">
+	<i class="fa-solid fa-xmark" style="color:white; cursor: pointer;" id="close"></i>
+
+<div class="slidemenu">
+
+<a href="home.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About Us</a>
+<a href="gallary.html" style="color: #E1AA36;">Gallary</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+</div>
+
+<p class="p3"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-whatsapp"></i></p>
+
+</div>
+
+<!-- header over -->
+
+
+
+
+
+ <div class="gallery">
+    <!-- 12 Images -->
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dining-restaurant-1.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-3-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-4.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-2.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2022/07/blog-2-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-5.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/slider-2-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-4-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-7-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-1-2.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+    <div class="gallery-item"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-5-3.jpg"><div class="overlay"><i class="fas fa-search"></i></div></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="myModal">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img id="modalImg" src="">
+    <span class="next">&#10095;</span>
+  </div>
+
+
+  
+
+<footer>
+  <div class="f1">
+    <a href="home.html">Home </a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="f2" style="text-align: center;">
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="80" width="150"><p style="color:white;margin-top: 20px;">40 Park Ave, Brooklyne, New York 70250</p>
+    <p style="color:white;margin-top: 10px;">1-800-000-111</p>
+    <a href="mailto:contact@gamil.com" style="color:white;margin-top: 10px;display: inline-block;text-decoration: none;">contact@gmail.com</a>
+  </div>
+
+  <div class="f3">
+     <a href="https://www.facebook.com">Facebook </a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.Whatsapp.com">Whatsapp</a>
+  </div>
+</footer>
+
+<div style="background-color: #D89216;text-align: center;padding: 20px;font-style: italic;">
+<p>Website Design By : Pratvi Jikadra<br><a href="mailto:pratvijikadra@gmail.com" style="color:black;margin-top: 5px;display: inline-block;" class="pratvi" title="mail me to design your website">pratvijikadra@gmail.com</a></p>
+</div>
+
+
+
+
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImg");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const closeBtn = document.querySelector(".close");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+    let currentIndex = 0;
+
+    // Open modal when clicking anywhere on gallery item
+    galleryItems.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        const img = item.querySelector("img");
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        currentIndex = index;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % galleryItems.length;
+      modalImg.src = galleryItems[currentIndex].querySelector("img").src;
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+      modalImg.src = galleryItems[currentIndex].querySelector("img").src;
+    });
+
+    // Close modal on background click
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  </script>
+
+
+
+</body>
+</html>

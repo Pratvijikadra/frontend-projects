@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<!-- Outlined style family (variable font) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="home-style.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="" href="logo.png">
+	<title>Dina Fine Dining Resturant</title>
+
+<script>
+	$(document).ready(function(){
+
+$(".menu").click(function(){
+
+	$(".click").show().animate({
+		width: "350px"
+	}, 500);
+
+});
+
+ $("#close").click(function(){
+    $(".click").animate({
+      width: "0"
+    }, 500, function(){   // animate khatam hone ke baad chalega
+      $(this).hide();
+    });
+  });
+
+  // dessert
+  $(".dessert").click(function(){
+    $(".dessertslide").slideToggle(500);
+    $(this).find(".arrow").toggleClass("fa-angle-down fa-angle-up");
+  });
+
+  // course
+  $(".course").click(function(){
+    $(".courseslide").slideToggle(500);
+    $(this).find(".arrow").toggleClass("fa-angle-down fa-angle-up");
+  });
+
+  // soup
+  $(".soup").click(function(){
+    $(".soupslide").slideToggle(500);
+    $(this).find(".arrow").toggleClass("fa-angle-down fa-angle-up");
+  });
+
+  // starter
+  $(".starter").click(function(){
+    $(".starterslide").slideToggle(500);
+    $(this).find(".arrow").toggleClass("fa-angle-down fa-angle-up");
+  });
+
+
+
+	});
+
+
+
+</script>
+
+
+<style>
+	
+
+:root {
+  --button:#E1AA36;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- header -->
+<div id="v">
+<video muted loop autoplay>
+	<source src="video1.mp4" type="">
+</video>
+
+<div id="top"><p class="p1">40 Park Ave, Brooklyn, New York 70250</p>
+<p class="p2"><a href="https://www.facebook.com" style="color:white;"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com" style="color:white;"><i class="fa-brands fa-instagram"></i></a><a href="https://www.twitter.com" style="color:white;"><i class="fa-brands fa-twitter"></i></a><a href="https://www.Whatsapp.com" style="color:white;"><i class="fa-brands fa-whatsapp"></i></a></p>
+</div>
+
+<nav>
+<a href="home.html">	<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="50" width="100"></a>
+<p class="menu"><i class="fa-solid fa-bars"></i></p>
+
+<div class="link">
+
+<a href="home.html" style="color: #E1AA36;">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+<a href="contact.html" class="book">BOOK A TABLE</a>
+
+</div>
+</nav>
+
+
+<div id="text">
+	<h1 style="color:white; text-transform: uppercase; " class="h1">Sublime Cuisine</h1>
+	<p style="margin-top: 15px; font-size: 17px;">Discover and experience fine selection of international tastes</p>
+	<a href="contact.html" class="book" style="margin-top:28px;display: inline-block;">BOOK A TABLE</a>
+
+</div>
+
+</div>
+
+
+<div class="click">
+	<i class="fa-solid fa-xmark" style="color:white; cursor: pointer;" id="close"></i>
+
+<div class="slidemenu">
+
+<a href="home.html" style="color: #E1AA36;">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+</div>
+
+<p class="p3"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-whatsapp"></i></p>
+
+</div>
+
+<!-- header over -->
+
+
+<p class="lines"><i>Welcome to Dina, a modern restaurant with a focus on premium food tastes. We invite you to celebrate our restaurant’s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world.</i></p>
+
+<div class="container">
+	
+<div class="d1"><p style="letter-spacing: 2px;">HISTORY</p>
+<h1 style="font-size: 50px;letter-spacing: 2px;margin-top: 10px;">ABOUT US</h1>
+<p style="line-height: 25px;margin-top: 45px;letter-spacing: 1px;">Vestibulum eleifend gravida neque a bibendum. Vivamus viverra velit non cursus elementum. Donec sit amet posuere ipsum. Mauris rutrum sagittis sapien text link. In vitae ipsum eleifend, auctor turpis in, vestibulum dui. Ut vestibulum, lorem id eleifend mollis, urna augue imperdiet ante, vitae aliquam turpis mauris nisi.</p>
+
+<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-6.jpg" width="100%" height="400" style="margin-top: 50px;">
+</div>
+
+<div class="d2">
+	
+	<img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-7.jpg" width="100%" height="707" id="img">
+</div>
+
+</div>
+
+<div class="container2">
+	
+<div class="dessert">
+	<i class="fa-solid fa-angle-down arrow"></i><h1 style="display: inline-block; vertical-align: middle;margin-left: 7px;">DESSERTS</h1>
+</div>
+
+
+<div class="dessertslide">
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Summer Berry and Coconut Tart</span>
+      <span class="dots"></span>
+      <span class="price">$10.00</span>
+    </div>
+    <p><i>Raspberries, blackberries, blueberries, graham cracker crumbs</i></p>
+  </div>
+
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Pumpkin Cookies Cream Cheese</span>
+      <span class="dots"></span>
+      <span class="price">$12.00 / $20.00</span>
+    </div>
+    <p><i>Pumpkin, sugar, butter, eggs</i></p>
+  </div>
+
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Double Chocolate Cupcakes</span>
+      <span class="dots"></span>
+      <span class="price">$7.00</span>
+    </div>
+    <p><i>Chocolate, eggs, vanilla, milk</i></p>
+  </div>
+</div>
+
+
+
+<div class="course"><i class="fa-solid fa-angle-down arrow"></i><h1 style="display: inline-block; vertical-align: middle;margin-left: 7px;">MAIN COURSES</h1></div>
+
+<div class="courseslide">
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Braised Pork Chops</span>
+      <span class="dots"></span>
+      <span class="price">$21.00</span>
+    </div>
+    <p><i>4 bone-in pork chops, olive oil, garlic, onion</i></p>
+  </div>
+
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Prime Rib</span>
+      <span class="dots"></span>
+      <span class="price">$20.00</span>
+    </div>
+    <p><i>Rib, rosemary, black pepper, red wine</i></p>
+  </div>
+
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Coconut Fried Chicken</span>
+      <span class="dots"></span>
+      <span class="price">$19.00</span>
+    </div>
+    <p><i>8 chicken pieces, coconut milk, oil</i></p>
+  </div>
+
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Sriracha Beef Skewers</span>
+      <span class="dots"></span>
+      <span class="price">$12.00</span>
+    </div>
+    <p><i>
+Beef, garlic, sesame oil, vinegar</i></p>
+  </div>
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Terrific Turkey Chili</span>
+      <span class="dots"></span>
+      <span class="price">$8.00</span>
+    </div>
+    <p><i>Turkey, oregano, tomato paste, peppers</i></p>
+  </div>
+</div>
+
+<div class="soup">
+  <i class="fa-solid fa-angle-down arrow"></i><h1 style="display: inline-block; vertical-align: middle;margin-left: 7px;">SOUPS</h1></div>
+  <div class="soupslide">
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Italian Sausage Tortellini</span>
+      <span class="dots"></span>
+      <span class="price">$9.00</span>
+    </div>
+    <p><i>
+Cheese tortellini, sausage, garlic, carrots, zucchini</i></p>
+  </div>
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Cream of Asparagus Soup</span>
+      <span class="dots"></span>
+      <span class="price">$10.00</span>
+    </div>
+    <p><i>Asparagus, potato, celery, onion, pepper</i></p>
+  </div>
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Italian Sausage Tortellini</span>
+      <span class="dots"></span>
+      <span class="price">$9.00</span>
+    </div>
+    <p><i>
+Cheese tortellini, sausage, garlic, carrots, zucchini</i></p>
+  </div>
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Cream of Asparagus Soup</span>
+      <span class="dots"></span>
+      <span class="price">$10.00</span>
+    </div>
+    <p><i>Asparagus, potato, celery, onion, pepper</i></p>
+  </div>
+
+
+</div>
+
+
+<div class="starter"><i class="fa-solid fa-angle-down arrow"></i><h1 style="display: inline-block; vertical-align: middle;margin-left: 7px;">STARTERS</h1></div>
+
+<div class="starterslide">
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Braised Pork Chops</span>
+      <span class="dots"></span>
+      <span class="price">$21.00</span>
+    </div>
+    <p><i>4 bone-in pork chops, olive oil, garlic, onion</i></p>
+  </div>
+
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Prime Rib</span>
+      <span class="dots"></span>
+      <span class="price">$20.00</span>
+    </div>
+    <p><i>Rib, rosemary, black pepper, red wine</i></p>
+  </div>
+
+  <div class="panel">
+    <div class="menu-item">
+      <span class="name">Coconut Fried Chicken</span>
+      <span class="dots"></span>
+      <span class="price">$19.00</span>
+    </div>
+    <p><i>8 chicken pieces, coconut milk, oil</i></p>
+  </div>
+
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Sriracha Beef Skewers</span>
+      <span class="dots"></span>
+      <span class="price">$12.00</span>
+    </div>
+    <p><i>
+Beef, garlic, sesame oil, vinegar</i></p>
+  </div>
+
+<div class="panel">
+    <div class="menu-item">
+      <span class="name">Terrific Turkey Chili</span>
+      <span class="dots"></span>
+      <span class="price">$8.00</span>
+    </div>
+    <p><i>Turkey, oregano, tomato paste, peppers</i></p>
+  </div>
+
+</div>
+</div>
+
+<div class="btn-center">
+  <a href="home.html" class="book">VIEW ALL MENU</a>
+</div>
+
+<div class="images">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-5-900x500.jpg">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-2-900x500.jpg" class="m2">
+</div>
+
+  <p style="color:white;text-align: center;text-transform: uppercase;margin-top: 120px;letter-spacing: 2px;">A Unique Culinary Experience</p>
+  <h1 style="color:white;text-align: center;text-transform: uppercase; margin-top: 15px; letter-spacing: 2px;" class="h2">Dining Locations</h1>
+
+
+<div class="container3">
+  
+<div class="location1">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-8.jpg">
+  <h1 style="color:white; margin-top: 15px;margin-bottom: 15px;">TERACE</h1>
+  <p style="color:white;line-height: 25px; letter-spacing: 1px;">Donec sit amet posuere ipsum. Mauris rutrum sagittis sapien text link. In vitae ipsum eleifend, auctor turpis.</p>
+</div>
+
+<div class="location1 l2">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dining-restaurant-1-400x400.jpg">
+  <h1 style="color:white; margin-top: 15px;margin-bottom: 15px;">RESTAURANT</h1>
+  <p style="color:white;line-height: 25px; letter-spacing: 1px;">Donec sit amet posuere ipsum. Mauris rutrum sagittis sapien text link. In vitae ipsum eleifend, auctor turpis.</p>
+</div>
+
+<div class="location1 l3">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-13-400x400.jpg">
+  <h1 style="color:white; margin-top: 15px;margin-bottom: 15px;">EVENTS SALON</h1>
+  <p style="color:white;line-height: 25px; letter-spacing: 1px;">Donec sit amet posuere ipsum. Mauris rutrum sagittis sapien text link. In vitae ipsum eleifend, auctor turpis.</p>
+</div>
+
+</div>
+
+<div class="container4">
+
+<div class="time">
+  <div class="time1"><h2>LUNCH TIME : </h2><br><p>Mon - Fri : 12 PM - 2 PM</p></div>
+   <div class="time2"><h2>DINNER HOURS : </h2><br><p>Mon - Fri : 7 PM - 9 PM</p></div>
+</div>
+
+</div>
+
+
+<p style="text-align: center;font-size: 50px;margin-top: 100px;"><i class="fa-solid fa-quote-right"></i></p>
+
+<p style="color:white; font-size: 23px;" class="p4">"Cum accusam expetendis cu, dolor dicam sadipscing eum an. Ei his eros populo, ne putent iuvaret detracto pri, per aeque viderer ut. Vix ea primis probatus, pro eu verear sententiae. Ne case congue qui, splendide hendrerit mel te, omnesque delicatissimi ad mea. At omnis quando electram nam, ne prompta adversarium."</p>
+
+<p style="color: var(--button); text-align: center;margin-top: 15px;"><b>ROBER WHITE</b></p>
+<p style="color:white; text-align: center;margin-top: 5px;">Fast Deliver</p>
+
+<div class="container5">
+  
+<div class="photo1">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-10.jpg" class="image1">
+  <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/07/dining-restaurant-11.jpg" class="image2">
+</div>
+
+<div class="photo2"><p style="letter-spacing: 2px;color: white;">EXPERIENCE</p>
+<h1 style="color:white; font-size: 50px; text-transform: uppercase;">Private Events</h1>
+<p style="color:white;line-height: 30px;font-size: 18px;margin-top: 50px;">You can choose from a variety of styles, light and easy drinking, fresh and aromatic white wines or you could try intense and elegant red wines. Creative cuisine involves sophisticated wines.<br><br>Vestibulum eleifend gravida neque a bibendum. Vivamus viverra velit non cursus elementum. Donec sit amet posuere ipsum. Mauris rutrum sagittis sapien text link. In vitae ipsum eleifend, auctor turpis in, vestibulum dui. Ut vestibulum, lorem id eleifend mollis, urna augue imperdiet ante, vitae aliquam turpis mauris eget nisi.</p>
+<a href="home.html" class="book" style="margin-top:50px;display: inline-block;">FIND MORE</a>
+</div>
+</div>
+
+<p style="letter-spacing: 2px;color: white; text-align: center;margin-top: 120px;">VISIT US</p>
+<h1 style="color:white;  text-transform: uppercase;text-align: center;margin-top: 15px;" class="h4">Good Food Good Time</h1>
+
+
+<div class="btn-center">
+  <a href="contact.html" class="book" style="margin-top:-10px;">BOOK NOW</a>
+</div>
+
+<footer>
+  <div class="f1">
+    <a href="home.html">Home </a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="f2" style="text-align: center;">
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="80" width="150"><p style="color:white;margin-top: 20px;">40 Park Ave, Brooklyne, New York 70250</p>
+    <p style="color:white;margin-top: 10px;">1-800-000-111</p>
+    <a href="mailto:contact@gamil.com" style="color:white;margin-top: 10px;display: inline-block;text-decoration: none;">contact@gmail.com</a>
+  </div>
+
+  <div class="f3">
+     <a href="https://www.facebook.com">Facebook </a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.Whatsapp.com">Whatsapp</a>
+  </div>
+</footer>
+
+<div style="background-color: #D89216;text-align: center;padding: 20px;font-style: italic;">
+<p>Website Design By : Pratvi Jikadra<br><a href="mailto:pratvijikadra@gmail.com" style="color:black;margin-top: 5px;display: inline-block;" class="pratvi" title="mail me to design your website">pratvijikadra@gmail.com</a></p>
+</div>
+
+
+</body>
+</html>
