@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style>
+	/*header*/
+	body{
+		margin:0;
+		padding: 0;
+		font-family: sans-serif;
+		background-color: #D7D7D7;
+
+	}
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+
+
+
+
+
+
+	.ul1{
+		list-style-type: none;
+		background-color: black;
+		overflow: hidden;
+		/*padding-left: 40px;
+		padding-right: 40px;*/
+		font-size: 14px;
+		margin-top: -5px;
+
+		
+	}	
+.ul1 li{
+	float: left;
+
+}
+.ul1 a{
+	display: block;
+	color: white;
+	margin: 15px 0px 50px 40px;
+}
+.li1{
+	margin-left: 475px;
+}
+.p1{
+	margin-left: 930px;
+	/*margin-top: 30px;
+	margin-bottom: 30px;*/
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+.p1 i{
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 23px;
+}
+
+.p1 i:last-child{
+	margin-right: 0;
+	margin-left: -14px;
+}
+.material-symbols-outlined{
+	vertical-align: middle;
+}
+
+.login:hover{
+	color: gray;
+}
+.fa-circle-user{
+	vertical-align: middle;
+}
+.fa-magnifying-glass{
+	vertical-align: middle;
+}
+.circle{
+	vertical-align: middle;
+}
+.fa-magnifying-glass:hover{
+	color: gray;
+}
+
+.ul2{
+	list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #D7D7D7;
+		overflow: hidden;
+		font-size: 14px;
+		
+
+
+}
+.ul2 li{
+	float: left;
+
+}
+.ul2 a{
+	display: block;
+	padding: 15px 17px;
+	text-decoration-line: none;
+	color: black;
+}
+.a1{
+	margin-left: 25px;
+}
+
+.ul2 a:hover:not(.audio){
+	color: #9929EA;
+}
+
+.ul2 .c{
+	color: #9929EA;
+}
+
+
+.dropdown{
+	display: inline-block;
+	/*position: relative;*/
+}
+.dropdown-content{
+	position: absolute;
+	display: none;
+	z-index: 1;
+	background-color: rgb(200, 200,200);
+	/*margin-top: 10px;*/
+}
+.dropdown-content a{
+	display: block;
+	color: black;
+	padding: 10px;
+
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content a:hover{
+	color: #9929EA;
+}
+		/*header voer*/
+
+
+.all{
+margin-top: 10px;width: 100%; background-color: #D7D7D7;overflow: hidden;
+ width: 100%;
+}
+.all a:first-child{
+	margin-left: 25px;
+}
+.all a:last-child{
+	margin-left: -10px;
+}
+.all a:first-child:hover{
+	color: gray;
+}
+
+
+.all a{
+	float: left;
+	font-size: 14px;
+}
+
+.all a{
+	display: block;
+	text-decoration-line: none;
+	color: black;
+	/*background-color: #D7D7D7;*/
+	padding: 15px ;
+}
+.all i{
+	display: inline-block;margin-top: 15px;
+	/*border: 1px solid red;*/
+	margin-left: -110px;
+}
+nav{
+	height: 100%;width: 20%;
+	/*border: 1px solid blue;*/
+	box-sizing: border-box;
+	padding-left: 40px;
+	float: left;
+}
+nav a{
+	text-decoration-line:none;
+	color: black; 
+	display: block;
+	line-height: 32px;
+}
+nav a:hover{
+	text-decoration-line: underline;
+}
+.product:hover{
+	text-decoration-line: none;
+}
+.main{
+	margin-left: 40px;
+	width: 74%;
+	/*border: 1px solid blue;*/
+	float: left;
+	
+}
+.main select {
+	border: none;
+	background-color: transparent;
+	}
+.main:focus{
+	outline: none;
+}
+/*.main select:hover, label:hover{
+	color: gray;
+}
+*/
+.sort:hover{
+	color: gray;
+}
+.d1{
+	height: 390px;
+	width: 300px;
+	float: left;margin-right: 5px;
+	background-color: white;
+}
+.m1:hover {
+	transform: scale(1.1);
+	transition: transform .6s;
+}
+.m1{
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+
+/*footer*/
+.help:hover{
+	color: white;
+	background-color: #9929EA;
+
+	text-decoration: none;
+
+	
+}
+
+.help{
+	border: 1px solid #9929EA;
+	color: #9929EA;
+	background-color: white;
+	border-radius: 30px;
+	padding: 15px 100px;
+}
+.ul3{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.ul3 a{
+	color: black;
+	text-decoration: none;
+	line-height: 40px;
+	display: block;
+}
+.ul3 a:hover{
+	color: #9929EA;
+}
+
+.dropdown2{
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content2{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	left: 100%;
+	top: 0;
+
+
+}
+.dropdown2:hover .dropdown-content2, .dropdown-content2:hover{
+	display: block;
+}
+.dropdown-content2 a:hover{
+	color: #9929EA;
+}
+.c {
+	color: #9929EA;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+<header>
+<ul class="ul1">
+	<p style="float: left;color: white;margin-top: 15px;"><i class="material-symbols-outlined" style="vertical-align:middle;cursor: context-menu;">package_2</i> &nbsp;&nbsp; Free Shipping for orders over $50</p>
+	<li class="li1"><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li><a href="help.html">Help Center</a></li>
+	<li><a href="#"style="text-decoration-line
+	: none;">Call Us <span style="text-decoration-line:underline;">123-456-7890</span></a></li>
+</ul>
+
+<div style="box-sizing: border-box;width: 100%;background-color: white;margin-top: -15px;">
+	<div style="cursor: pointer; font-size: 35px; font-weight: bold; margin-left: 40px; padding-top: 20px; float: left;margin-top: 0;">TechShed</div>
+
+<div class="p1">
+	<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-circle-user"></i><span class="login">Log In</span>
+
+<i class="material-symbols-outlined">
+favorite
+</i>
+
+<i class="fa-solid fa-cart-shopping circle"></i>
+<i class="material-symbols-outlined circle">
+counter_0
+</i>
+</div>
+
+</div>
+
+<ul class="ul2">
+<li><a class="a1"  href="shopall.html">Shop All</a></li>
+<li><a href="computer.html" >Computers</a></li>
+<li><a href="tablet.html" class="c">Tablets</a></li>
+<li><a href="drone.html">Drones & Cameras</a>
+</li>
+
+ <li class="dropdown">
+    <a href="#" class="audio">Audio</a>
+    <div class="dropdown-content">
+      <a href="headphone.html">Headphones</a>
+      <a href="speaker.html">Speakers</a>
+    </div>
+  </li>
+
+<li><a href="mobile.html">Mobile</a></li>
+<li><a href="tv.html">T.V & Home Cinema</a></li>
+<li><a href="tech.html">Ewarable Tech</a></li>
+<li><a href="sale.html">Sale</a></li>
+</ul>
+</header>
+
+
+
+
+
+
+
+<div class="all">
+	<a href="website1.html">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><i class="fa-solid fa-angle-right arrow"></i>
+	<a href="tablet.html" style="cursor:initial; 
+	margin-right: 20px;">Tablets</a>
+</div>
+
+
+<nav>
+	<p style="font-size: 20px;">Browse by</p><hr style="border: none; height: 1px; background-color: gray;">
+	<a href="shopall.html" >All Products</a>
+	<a href="bestseller.html">Best Sellers</a>
+	<a href="computer.html" >Computers</a>
+	<a href="drone.html">Drones & Cameras</a>
+	<a href="headphone.html">Headphones</a>
+	<a href="homepagebestsaller.html">Home Page Best Seller</a>
+	<a href="homepagesale.html">Home Page sale</a>
+	<a href="mobile.html">Mobile</a>
+	<a href="sale.html">Sale</a>
+	<a href="speaker.html">Speaker</a>
+	<a href="tablet.html" style="font-weight: bold;" class="product">Tablets</a>
+	<a href="tv.html">TV & Home Cinema</a>
+	<a href="tech.html">Wearable Tech</a>
+
+
+<p style="font-size: 20px;margin-top: 40px;">Filter by</p><hr style="border: none; height: 1px; background-color: gray;">
+
+<p style="font-size: 20px;">Price</p><i class="fa-solid fa-plus" style="float:right;margin-top: -40px;"></i><hr style="border: none; height: 1px; background-color: gray;">
+
+<p style="font-size: 20px;">Color</p><i class="fa-solid fa-plus" style="float:right;margin-top: -40px;"></i><hr style="border: none; height: 1px; background-color: gray;">
+
+</nav>
+
+
+<div class="main">
+	<h1 style="font-size: 50px;margin-top: 20px;">Tablets</h1>
+<p style="margin-top: 60px;font-size: 14px;">8 Products</p>
+<div class="sort">
+<select style="float:right; margin-top: -30px;"><option>Recommended</option>
+<option>Newest</option>
+<option>Price (low to high)</option>
+<option>price (high to low)</option> 
+<option>Name A-Z</option>
+<option>Name Z-A</option> </select>
+<label style="float:right;margin-top: -30px;margin-right: 130px;">Sort By:</label></div>
+
+
+<div class="d1">
+	<img src="https://static.wixstatic.com/media/c22c23_67a4de6683784fbbb684418e49d5d854~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_67a4de6683784fbbb684418e49d5d854~mv2.png" width="230" height="200" class="m1" style="margin-left: 30px;">
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Sheer 10.2" Tablet With Wi-Fi , 32GB</p>
+<p style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;">$85.00</p></div>
+
+</div>
+
+<div class="d1" style="position: relative;">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_9a6d29ecf9c640b28cc79f695e9fb3c2~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_9a6d29ecf9c640b28cc79f695e9fb3c2~mv2.png" width="200" height="200" class="m1" style="margin-left:50px;">
+	
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">JP - Space Tablet 10.4" Wi-Fi 32GB</p>
+<p style="padding-bottom: 19px;margin-top: -5px;"><span style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;">$85.00 </span></p></div>
+
+
+</div>
+<div class="d1">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_23738414163d418092290f6b9becc5f5~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_23738414163d418092290f6b9becc5f5~mv2.png" width="200" height="200" class="m1" style="margin-left: 50px;">
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Pilates Go 10.5" Touch-Screen, 64GB With Cover</p>
+<p style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;">$85.00</p></div>
+
+</div>
+
+<div class="d1" style="position: relative; margin-top: 40px;">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_5669a61229d34b15b7ff71c4f2269a4b~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_5669a61229d34b15b7ff71c4f2269a4b~mv2.png" width="200" height="200" class="m1" style="margin-left:45px;">
+
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Ove Tablet FD Plus - 10.3", 32GB</p>
+<p style="padding-bottom: 19px;margin-top: -5px;"><span style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;">$85.00 </span></p></div>
+</div>
+
+
+<div class="d1" style="position: relative; margin-top: 40px;">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_91ee238e5ee447878278fd04f4d3fafe~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_91ee238e5ee447878278fd04f4d3fafe~mv2.png" width="230" height="200" class="m1" style="margin-left:30px;">
+	
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Sheer Pro 7.9-Inch Mini Tablet</p>
+<p style="padding-bottom: 19px;margin-top: -5px;"><span style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;">$85.00 </span></p></div>
+</div>
+
+
+<div class="d1" style="position: relative; margin-top: 40px;">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_a055ae2dfe6f457b9c2f6f3fa6d95126~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_a055ae2dfe6f457b9c2f6f3fa6d95126~mv2.png" width="200" height="200" class="m1" style="margin-left:40px;">
+	<div style="font-size:17px; color: white; background-color: red; border-radius: 20px; width: 70px;height: 25px;text-align: center;align-content: center;position: absolute;top: 10px;
+	margin-left: 10px;">SALE</div>
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Ove Tablet FD Plus - 10.3", 32GB</p>
+<p style="padding-bottom: 19px;margin-top: -5px;"><span style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;text-decoration: line-through;">$85.00 </span><span style="Color:#9929EA;font-size: 20px;">$70.00</span></p></div>
+</div>
+
+
+<div class="d1" style="position: relative; margin-top: 40px;">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_597373dec7644ad2818277724199fb0c~mv2.png/v1/fill/w_316,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_597373dec7644ad2818277724199fb0c~mv2.png" width="200" height="200" class="m1" style="margin-left:40px;">
+	<div style="font-size:17px; color: white; background-color: red; border-radius: 20px; width: 70px;height: 25px;text-align: center;align-content: center;position: absolute;top: 10px;
+	margin-left: 10px;">SALE</div>
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Turn5 Portable Bluetooth Speaker With Handle</p>
+<p style="padding-bottom: 19px;margin-top: -5px;"><span style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;text-decoration: line-through;">$85.00 </span><span style="Color:#9929EA;font-size: 20px;">$70.00</span></p></div>
+</div>
+
+
+
+
+<div class="d1" style="position: relative; margin-top: 40px;">
+	
+	<img src="https://static.wixstatic.com/media/c22c23_5357f93228bc4548ba664ea0b8d91f27~mv2.jpg/v1/fill/w_316,h_316,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_5357f93228bc4548ba664ea0b8d91f27~mv2.jpg" width="200" height="200" class="m1" style="margin-left:40px;">
+	<div style="font-size:17px; color: white; background-color: red; border-radius: 20px; width: 70px;height: 25px;text-align: center;align-content: center;position: absolute;top: 10px;
+	margin-left: 10px;">SALE</div>
+<div style="background-color: #D7D7D7;"><p style="padding-top: 15px;margin-top: 50px;">Turn5 Portable Bluetooth Speaker With Handle</p>
+<p style="padding-bottom: 19px;margin-top: -5px;"><span style="Color:#9929EA;font-size: 20px; margin-top: -5px; padding-bottom: 19px;text-decoration: line-through;">$85.00 </span><span style="Color:#9929EA;font-size: 20px;">$70.00</span></p></div>
+</div>
+
+
+
+
+</div>
+
+
+<!-- footer -->
+<div style="position:absolute; z-index: 2;margin-top: 1500px;width: 100%;">
+<div style="height:400px;background-color: white;margin: auto;width: 100%;position: relative;margin-top: 10px;">
+<img src="headphone.jpg" height="100%" width="50%" style="float: right;">
+
+
+<div style="background-color:black; height: 100%; width: 50%;left: 0; position: absolute; top: 0; padding-left: 80px; box-sizing: border-box;">
+	
+
+<h1 style="margin-top:70px; line-height: 40px; color:white;">
+Need Help? Check <br>Out Our Help Center</h1>
+
+<p style=" color: white;margin-bottom: 70px;"> i'am a paragraph. Click here to add your own text<br> and edit me. Let your users get to know you.</p>
+
+
+<a class="help" href="help.html" style="text-decoration:none;">Go to Help Center</a>
+
+</div>
+
+</div>
+
+
+
+
+<div style="height:730px;background-color: white;margin: auto;width: 100%; padding-top: 60px;padding-left: 70px;box-sizing: border-box;">
+
+
+<div style="float:left; height: 500px; width: 300px;  ">
+	<p style="font-weight:bold; font-size: 18px;margin-bottom: 40px;">Store Location</p>
+<p>500 Terry Francine Street</p>
+<p>San Francisco, CA 94158</p>
+<p>info@mysite.com</p>
+<p>123-456-7890</p>
+<p style="font-size:20px;cursor: pointer;"><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa-brands fa-youtube"></i></p>
+</div>
+
+
+<div style="float:left; height: 500px; width: 300px; ">
+	<p style="font-weight:bold; font-size: 18px;margin-bottom: 40px;margin-bottom: 28px;">Shop</p>
+
+<ul class="ul3">
+	<li><a href="shopall.html">Shop All</a></li>
+	<li><a href="computer.html">Computers</a></li>
+	<li><a href="tablet.html">Tablets</a></li>
+	<li><a href="drone.html">Drones & cameras</a></li>
+
+
+<li class="dropdown2" style="width: 80%;"><a href="#">Audio</a>
+<div class="dropdown-content2">
+	<a href="speaker.html">Speakers</a>
+	<a href="headphone.html">Headphones</a>
+</div>
+
+</li>
+
+
+<li><a href="mobile.html">Mobile</a></li>
+<li><a href="tv.html">T.V & Home Cinema</a></li>
+<li><a href="tech.html">Wearable Tech</a></li>
+<li><a href="sale.html">Sale</a></li>
+
+
+</ul>
+</div>
+
+<div style="float:left; height: 500px; width: 300px;    ">
+	<p style="font-weight:bold; font-size: 18px;margin-bottom: 40px;">Customer Support</p>
+<p>
+Contact Us</p>
+
+<p>Help Center</p>
+
+<p>pAbout Us</p>
+
+<p>Careers</p>
+
+</div>
+
+<div style="float:left; height: 500px; width: 250;      ">
+	<p style="font-weight:bold; font-size: 18px;margin-bottom: 40px;">Policy</p>
+<p>Shipping & Returns </p>
+
+<p>Terms & Conditions</p>
+
+<p>Payment Methods</p>
+
+<p>FAQ</p>
+</div>
+
+<hr style="margin-top:500px;  margin-right: 100px; margin-left: 30px;height: 3px;           
+  background-color: darkgray; 
+  border: none;         ">
+
+<p style="text-align:center; font-size: 14px;margin-top: 30px;margin-bottom: 30px; ">We accept the following paying methods</p>
+
+<img src="visa.jpg"  height="40" width="70" style="margin-left: 80px;">
+<img src="master-card.jpg" height="40" width="70" style="margin-left: 50px;">
+<img src="american.jpg" height="40" width="70" style="margin-left: 50px;">
+<img src="pay.jpg" height="40" width="70" style="margin-left: 50px;">
+<img src="jcb.jpg" height="40" width="70" style="margin-left: 50px;">
+<img src="Diners.jpg" height="40" width="70" style="margin-left: 50px;">
+<img src="discover.jpg" height="40" width="70" style="margin-left: 50px;">
+<img src="paypal.jpg" height="40" width="70" style="margin-left: 50px;">
+
+
+</div>
+
+
+
+<footer style="text-align:center; height: 50px;align-content: center;">© 2035 by TechShed. Powered and secured by <span style="text-decoratio:underline;">Wix</span></footer>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
