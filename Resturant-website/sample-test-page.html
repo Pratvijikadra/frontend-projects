@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Blog Layout</title>
+<style>
+:root {
+  --button: #ff9800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+  line-height: 1.6;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 27% 43% auto;
+  margin-top: 100px;
+  padding: 0 70px;
+  row-gap: 50px;
+  width: 100%;
+}
+
+/* ✅ Main Post */
+.c1 {
+  text-align: center;
+  grid-column: 1 / 3;
+}
+.c1 img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* ✅ Sidebar */
+.c2 {
+  padding-left: 40px;
+}
+.c2 h4 {
+  text-align: center;
+  border-bottom: 5px double white;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.c2 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+  font-size: 17px;
+  transition: 0.4s;
+}
+.c2 a:hover {
+  color: var(--button);
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+.input {
+  flex: 1;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--button);
+}
+
+/* ✅ Blog grid sections */
+.c3, .cc3, .cc5, .cc7, .cc9, .cc11 {
+  grid-column: 1 / 2;
+}
+.c4, .cc4, .cc6, .cc8, .cc10, .cc12 {
+  grid-column: 2 / 3;
+  margin-left: 20px;
+  text-align: left;
+}
+.c3 img, .cc3 img, .cc5 img, .cc7 img, .cc9 img, .cc11 img {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  transition: transform 0.4s;
+}
+.c3 img:hover,
+.cc3 img:hover,
+.cc5 img:hover,
+.cc7 img:hover,
+.cc9 img:hover,
+.cc11 img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Text effects */
+.free {
+  transition: 0.4s;
+}
+.free:hover {
+  color: var(--button);
+}
+#s1 {
+  color: var(--button);
+  letter-spacing: 1px;
+  font-style: italic;
+}
+#s1:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+  .container1 {
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+  }
+  .c1 {
+    grid-column: 1 / 2;
+  }
+  .c2 {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  .c3, .c4, .cc3, .cc4, .cc5, .cc6, .cc7, .cc8, .cc9, .cc10, .cc11, .cc12 {
+    grid-column: 1 / 2;
+    margin-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container1">
+
+  <!-- First Big Blog -->
+  <div class="c1">
+    <p><span id="s1">Dessert</span> <span id="s1"> Food</span></p><br>
+    <h1 class="free">Gluten Free Muffins</h1><br>
+    <p style="font-size: 14px;">January 15, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius: 50%;vertical-align: middle;"> 
+      <span style="color:var(--button);">Silvia just</span> 
+    </p><br>
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2022/07/blog-2-3.jpg" alt="Muffins"><br><br>
+    <p style="text-align: left; font-size: 17px;">
+      Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. 
+      Consectetur adipiscing elit. Vivamus auctor condimentum sem et gravida...
+    </p><br><br>
+    <a href="blog.html" class="book" style="color:var(--button);">READ MORE</a><br><br>
+    <hr>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="c2">
+    <h4>CATEGORIES</h4>
+    <a href="#">Dessert</a>
+    <a href="#">Food</a>
+    <a href="#">Italian</a>
+    <a href="#">Recipes</a>
+
+    <form class="form">
+      <input type="text" class="input" required placeholder="Search...">
+      <button type="submit" class="btn">Search</button>
+    </form>
+
+    <br><br>
+    <h4>RECENT POSTS</h4>
+    <a href="#">Gluten Free Muffins</a>
+    <a href="#">Next Level Steak Sandwich</a>
+    <a href="#">Epic Egg Salad</a>
+    <a href="#">Double-choc brownies</a>
+    <a href="#">Quick Grilled Pizza</a>
+  </div>
+
+  <!-- Next posts grid -->
+  <div class="c3"><a href="#"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-3-3.jpg"></a></div>
+  <div class="c4">
+    <p><span id="s1">Food</span></p>
+    <h2 class="free">Next Level Steak Sandwich</h2>
+    <p style="font-size:14px;">January 15, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p>Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit...</p><br>
+    <a href="#" class="book" style="color:var(--button);">READ MORE</a>
+  </div>
+
+  <div class="cc3"><a href="#"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2017/02/blog-1-2.jpg"></a></div>
+  <div class="cc4">
+    <p><span id="s1">Food</span> <span id="s1">Recipes</span></p>
+    <h2 class="free">Epic Egg Salad</h2>
+    <p style="font-size:14px;">January 18, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p>Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra...</p><br>
+    <a href="#" class="book" style="color:var(--button);">READ MORE</a>
+  </div>
+
+  <div class="cc5"><a href="#"><img src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipesmedia/recipes/retail/x17/2003/feb/17244-caramel-topped-ice-cream-dessert-600x600.jpg"></a></div>
+  <div class="cc6">
+    <p><span id="s1">Dessert</span> <span id="s1">Food</span> <span id="s1">Recipes</span></p>
+    <h2 class="free">Double-choc brownies</h2>
+    <p style="font-size:14px;">January 27, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p>Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit...</p><br>
+    <a href="#" class="book" style="color:var(--button);">READ MORE</a>
+  </div>
+
+  <div class="cc7"><a href="#"><img src="https://richanddelish.com/wp-content/uploads/2022/05/garlic-pizza.jpg"></a></div>
+  <div class="cc8">
+    <p><span id="s1">Food</span> <span id="s1">Italian</span> <span id="s1">Recipes</span></p>
+    <h2 class="free">Quick Grilled Pizza</h2>
+    <p style="font-size:14px;">January 03, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p>Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra...</p><br>
+    <a href="#" class="book" style="color:var(--button);">READ MORE</a>
+  </div>
+
+  <div class="cc9"><a href="#"><img src="https://data.thefeedfeed.com/static/2019/07/29/15644214785d3f2d6690aac.jpg"></a></div>
+  <div class="cc10">
+    <p><span id="s1">Food</span> <span id="s1">Recipes</span></p>
+    <h2 class="free">Corn-and-Ham Risotto</h2>
+    <p style="font-size:14px;">January 11, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p>Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra...</p><br>
+    <a href="#" class="book" style="color:var(--button);">READ MORE</a>
+  </div>
+
+  <div class="cc11"><a href="#"><img src="https://blog.themalamarket.com/wp-content/uploads/2024/06/Vegetarian-pulled-noodles-lead-more-sat.jpg"></a></div>
+  <div class="cc12">
+    <p><span id="s1">Food</span> <span id="s1">Italian</span> <span id="s1">Recipes</span></p>
+    <h2 class="free">Chicken milanese with spaghetti</h2>
+    <p style="font-size:14px;">January 10, 2025 
+      <img src="user.png" height="40" width="40" style="border-radius:50%;vertical-align:middle;"> 
+      <span style="color:var(--button);">Silvia just</span>
+    </p><br>
+    <p>Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra...</p><br>
+    <a href="#" class="book" style="color:var(--button);">READ MORE</a>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandwich - Blog Post</title>
+  <link rel="stylesheet" href="sandwich-blog-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+$(".menu").click(function(){
+
+  $(".click").show().animate({
+    width: "350px"
+  }, 500);
+
+});
+
+ $("#close").click(function(){
+    $(".click").animate({
+      width: "0"
+    }, 500, function(){   // animate khatam hone ke baad chalega
+      $(this).hide();
+    });
+  });
+});
+</script>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="v">
+  <!-- Blog post main image -->
+  <img src="https://t3.ftcdn.net/jpg/15/56/74/58/240_F_1556745895_ZW61zDfaU4NI3HFvOwTefSvrrmvWDZxq.jpg" id="img1">
+
+  <div id="top">
+    <p class="p1">40 Park Ave, Brooklyn, New York 70250</p>
+    <p class="p2">
+     <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+    </p>
+  </div>
+
+  <nav>
+    <a href="home.html"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="50"></a>
+    <p class="menu"><i class="fa-solid fa-bars"></i></p>
+    <div class="link">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+      <a href="gallary.html">Gallary</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html" class="book">BOOK A TABLE</a>
+    </div>
+  </nav>
+<div class="click">
+  <i class="fa-solid fa-xmark" style="color:white; cursor: pointer;" id="close"></i>
+
+<div class="slidemenu">
+
+<a href="home.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About Us</a>
+<a href="gallary.html">Gallary</a>
+<a href="blog.html" style="color: #E1AA36;">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="home.html">Buy Now</a>
+
+</div>
+
+<p class="p3"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-whatsapp"></i></p>
+
+</div>
+  <div id="text">
+    <p style="font-size:17px;">CATEGORY: <span style="color:#E1AA36;">Food, Recipes</span></p>
+    <h1 class="h1">Next Level Steak Sandwich</h1>
+  </div>
+</div>
+
+<!-- BLOG CONTENT -->
+<div class="blog-container">
+  <!-- Main Article -->
+  <div class="article">
+    <p class="meta">January 18, 2025 • By <span>Silvia Just</span></p>
+    <p>
+      Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. 
+      Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra, sollicitudin dui eget, blandit lorem.
+    </p>
+    <blockquote>"Good food is the foundation of genuine happiness."</blockquote>
+    <p>
+      Donec lacinia magna sit amet arcu aliquet luctus. Maecenas vehicula metus nisi, nec finibus justo vulputate eget. 
+      Pellentesque porta felis id erat sodales condimentum. Nam nec nulla fringilla, pretium ex vitae, tempus turpis. 
+      Suspendisse potenti. Quisque luctus nisi vitae mauris posuere, eget convallis elit malesuada.
+    </p>
+    <div style="text-align: center;">
+    <img src="https://t3.ftcdn.net/jpg/15/56/74/58/240_F_1556745895_ZW61zDfaU4NI3HFvOwTefSvrrmvWDZxq.jpg" class="inside-img"></div>
+    <p>
+      Aenean feugiat, eros ut bibendum vestibulum, leo elit maximus tortor, vel dapibus lacus neque id eros. 
+      Aliquam erat volutpat. Curabitur pharetra nisi et cursus tincidunt.
+    </p>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h4>CATEGORIES</h4>
+     <a href="blog-single-page.html">Dessert</a>
+    <a href="gallary.html">Food</a>
+    <a href="pizza-blog.html">Italian</a>
+    <a href="blog.html">Recipes</a>
+
+    <form class="form">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+
+    <h4 style="margin-top:30px;">RECENT POSTS</h4>
+    <a href="blog-single-page.html">Gluten Free Muffins</a>
+    <a href="sandwich-blog.html">Next Level Steak Sandwich</a>
+    <a href="egg-blog.html">Epic Egg Salad</a>
+    <a href="pizza-blog.html">Quick Grilled Pizza</a>
+  </aside>
+</div>
+
+<!-- Related Posts -->
+<div class="related">
+  <h2>Related Posts</h2>
+  <div class="rel-grid">
+    <a href="blog-single-page.html"><img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2022/07/blog-2-3.jpg"><p>Gluten Free Muffins</p></a>
+    <a href="pizza-blog.html"><img src="https://richanddelish.com/wp-content/uploads/2022/05/garlic-pizza.jpg"><p>Quick Garlic Pizza</p></a>
+    <a href="corn-blog.html"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fea7cdcb0f4273cbb3269720f4f68c5b5f337f050"><p>Corn-and-Ham Risotto</p></a>
+  <a href="browni-blog.html"><img src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipesmedia/recipes/retail/x17/2003/feb/17244-caramel-topped-ice-cream-dessert-600x600.jpg"><p>Double-choc brownies</p></a>
+    <a href="egg-blog.html"><img src=" https://static01.nyt.com/images/2025/04/10/multimedia/hm-broken-egg-salad-bcvf/hm-broken-egg-salad-bcvf-googleFourByThree.jpg"><p>Epic Egg Salad</p></a>
+    <a href="noddle-blog.html"><img src="https://blog.themalamarket.com/wp-content/uploads/2024/06/Vegetarian-pulled-noodles-lead-more-sat.jpg"><p>Spicy mix veg noddles</p></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f1">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="f2">
+    <img src="https://dina.matchthemes.com/dining/wp-content/uploads/sites/2/2023/06/dina-logo2.png" height="70"><br>
+    <p>40 Park Ave, Brooklyn, New York 70250</p>
+    <p>1-800-000-111</p>
+  <a href="mailto:contact@gamil.com" style="color:white;margin-top: 10px;display: inline-block;text-decoration: none;">contact@gmail.com</a>
+  </div>
+  <div class="f3">
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.instagram.com">Instagram</a>
+     <a href="https://www.whatsapp.com">Whatsapp</a>
+  </div>
+</footer>
+
+<div style="background:#D89216;text-align:center;padding:15px;font-style:italic;">
+  <p>Website Design By : Pratvi Jikadra <br>
+    <a href="mailto:pratvijikadra@gmail.com" style="color:black;margin-top: 5px;display: inline-block;" class="pratvi" title="mail me to design your website">pratvijikadra@gmail.com</a></p>
+  </p>
+</div>
+
+</body>
+</html>
