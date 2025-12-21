@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            float: left;
+            padding: 8px 16px;
+        }
+
+        .navbar a:hover {
+            background-color: red;
+        }
+
+        @media screen and (max-width:550px) {
+            .navbar a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .side {
+                width: 100%;
+            }
+
+            .main {
+                width: 100%;
+            }
+        }
+
+        .header {
+            color: white;
+            background-color: rgb(14, 169, 86);
+            padding: 50px;
+            text-align: center;
+
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- note -->
+    <div style="background-color: yellow; padding: 5px;">
+        <h4>Resize the browser window to see the responsive effect.</h4>
+    </div>
+
+    <!-- header -->
+    <div class="header">
+        <h1>My Website</h1>
+        <p>with a <b>flexible</b> layout.</p>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+
+    <!-- flexible grid(content) -->
+    <div class="row">
+
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photoes of me:</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text about me in culpa quioffocoa desernes mollit anim...</p>
+            <h3>more text</h3>
+            <p>Lorem ipsum mollite text...</p>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div><br>
+            <div class="fakeimg" style="height: 60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, DEc 7, 2025</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text </p>
+            <p>Some text about me in culpa quioffocoa desernes mollit anim in culpa quioffocoa desernes mollit ani in
+                culpa quioffocoa desernes mollit ani in culpa quioffocoa desernes mollit ani in culpa quioffocoa
+                desernes mollit ani in culpa quioffocoa desernes mollit ani in culpa quioffocoa desernes mollit ani in
+                culpa quioffocoa desernes mollit aniin culpa quioffocoa desernes mollit aniin culpa quioffocoa desernes
+                mollit ani in culpa quioffocoa desernes mollit ani...</p><br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, DEc 7, 2025</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text </p>
+            <p>Some text about me in culpa quioffocoa desernes mollit anim in culpa quioffocoa desernes mollit ani in
+                culpa quioffocoa desernes mollit ani in culpa quioffocoa desernes mollit ani in culpa quioffocoa
+                desernes mollit ani in culpa quioffocoa desernes mollit ani in culpa quioffocoa desernes mollit ani in
+                culpa quioffocoa desernes mollit aniin culpa quioffocoa desernes mollit aniin culpa quioffocoa desernes
+                mollit ani in culpa quioffocoa desernes mollit ani...</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
