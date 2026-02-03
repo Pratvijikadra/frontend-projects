@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Faculty - C.N Computer Education</title>
+    <link rel="icon" type="image/png" href="images/cn-logo-titlebar.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="blog.css">
+    <!-- js file -->
+    <!-- <script src="blog.js"></script> -->
+
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl shadow sticky-top my-navbar bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/nav-logo.png" alt="logo" height="80" width="175">
+            </a>
+
+            <!-- Toggler now opens OFFCANVAS -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto mx-auto gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="course.html">Our Courses</a></li>
+
+
+                    <li class="nav-item dropdown dropdown-offcanvas">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            Why CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i>
+                        </a>
+                        <ul class=" dropdown-menu  dropdown-menu-offcanvas">
+                            <li><a class="dropdown-item dropdown-item-offcanvas " href="faculty.html">Faculty</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-item-offcanvas blog" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2 input-border" type="text" placeholder="Search..">
+                    <button class="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><img src="images/nav-logo.png" alt="logo" height="65" width="145"></h5>
+            <button type="button" class="btn-close offcanvas-close-btn" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"> <a class="nav-link" href="course.html">Our Courses</a></li>
+
+                <li class="nav-item dropdown dropdown-offcanvas">
+                    <a class="nav-link" data-bs-toggle="dropdown" style="cursor: pointer;">Why
+                        CnComputer <i class="fa-solid fa-angle-down" style="vertical-align: middle;"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-offcanvas">
+                        <li><a class="dropdown-item dropdown-item-offcanvas " href="faculty.html">Faculty</a>
+                        </li>
+                        <li><a class="dropdown-item dropdown-item-offcanvas blog" href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+
+            <form class="d-flex mt-5" id="searchForm">
+                <input class="form-control me-2" type="text" id="searchInput" placeholder="Search..">
+                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- offcanvas over -->
+
+    <div class="container-xl mt-4 ">
+        <div class="home padding">
+            <a href="index.html" class="pe-2">Home</a> <i class="fa-solid fa-angle-right"></i>
+            <b style="font-size: 17px;" class="ps-2 pe-2">Why CnComputer</b><i class="fa-solid fa-angle-right"></i>
+            <b style="font-size: 17px;" class="ps-2">Blog</b>
+        </div>
+    </div>
+
+
+
+
+    <!-- BLOG HEADER -->
+    <section class="py-5 bg-white">
+        <div class="container-xl text-center">
+            <h1 class="blog-title">Our Blog</h1>
+            <p class="text-muted mt-2">
+                Learn about computer courses, career guidance, and latest technology trends
+            </p>
+        </div>
+    </section>
+
+    <!-- BLOG LIST -->
+    <section class="py-5">
+        <div class="container-xl">
+
+            <div class="row g-4">
+
+                <!-- BLOG 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+                        <div class="card-body">
+                            <p class="blog-meta mb-1">Programming • Career</p>
+                            <h5>Why Learning Programming is Important Today</h5>
+                            <p class="text-muted">
+                                Programming skills open doors to high-paying jobs, freelancing,
+                                and software development careers.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+                        <div class="card-body">
+                            <p class="blog-meta mb-1">Courses • Students</p>
+                            <h5>Best Computer Courses After 10th & 12th</h5>
+                            <p class="text-muted">
+                                CCC, Web Designing, Programming and Accounting courses
+                                are great options for students.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+                        <div class="card-body">
+                            <p class="blog-meta mb-1">Web Development</p>
+                            <h5>Difference Between Web Design & Web Development</h5>
+                            <p class="text-muted">
+                                Understand the difference between designing websites
+                                and developing dynamic web applications.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" alt="">
+                        <div class="card-body">
+                            <p class="blog-meta mb-1">Python • Career</p>
+                            <h5>Career Opportunities After Learning Python</h5>
+                            <p class="text-muted">
+                                Python is widely used in web development, data science,
+                                AI and automation fields.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="">
+                        <div class="card-body">
+                            <p class="blog-meta mb-1">Full Stack</p>
+                            <h5>What is Full Stack Development?</h5>
+                            <p class="text-muted">
+                                Full stack developers work on frontend, backend,
+                                database and server-side technologies.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1581092919535-7146caa89c6b" alt="">
+                        <div class="card-body">
+                            <p class="blog-meta mb-1">CCC • Government Jobs</p>
+                            <h5>Benefits of CCC Course for Students</h5>
+                            <p class="text-muted">
+                                CCC course improves basic computer knowledge
+                                and is useful for government & office jobs.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
